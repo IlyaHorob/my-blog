@@ -1,19 +1,32 @@
 $(document).ready(function () {
-    $('.modal-save').click(function () {
+    function saveArticle()
+    {
+        var formName = $('#newArticleForm');
+        var modalWindow = $('#newArticleModal');
+    
         $.ajax({
             type: "POST",
-            url: 'http://my-blog.loc/handler.php',
-            data: {
-                'name': 'john',
-                'email': 'john@test.com'
-            },
+            url: formName.attr('action'),
+            data: formName.serialize(),
             success: function (response) {
-                alert(response.name);
+                if(response.result){
+                    modalWindow.find('.modal-close').click();
+                    renderArticleRow();
+                }
             },
             fail: function () {
                 alert('Fail');
             },
             dataType: 'json'
         });
+    }
+    
+    function renderArticleRow()
+    {
+    
+    }
+    
+    $('.modal-save').click(function () {
+        saveArticle();
     });
 });

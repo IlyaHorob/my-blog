@@ -31,7 +31,7 @@
                             </div>
                         </div>
                     </div>
-                    <?php include_once 'newArticle.php' ?>
+                    <?php include_once 'newArticleForm.php' ?>
                     <div class="panel-body">
                         <div class="table-responsive">
                             <table class="table table-hover">
