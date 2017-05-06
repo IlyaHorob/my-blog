@@ -316,3 +316,7 @@ footer {
 .btn-google {
     background-color: #c32f10;
 }
+
+.dropdown-menu {
+    min-width: 112px;
+}

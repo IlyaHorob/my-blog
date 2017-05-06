@@ -5,22 +5,76 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="page-head-line">Blank Page</h4>
-            
+                <h4 class="page-head-line">Articles</h4>
             </div>
-        
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="alert alert-warning">
-                    This is blank page for which you can customize for your project.
-                    Use this admin template 100% free to use for personal and commercial use which is crafted by
-                    <br />
-                    <a href="http://www.designbootstrap.com/" target="_blank">DesignBootstrap.com</a> . For more free templates and snippets keep looking <a href="http://www.designbootstrap.com/" target="_blank">DesignBootstrap.com</a> . Hope you will like our work
-                
+                <!--    Hover Rows  -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Hover Rows
+                        <div class="pull-right">
+                            <div class="dropdown">
+                                <button class="btn btn-success dropdown-toggle btn-xs" type="button"
+                                        id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                    <span class="glyphicon glyphicon-cog"></span>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#"
+                                           data-toggle="modal"
+                                           data-target="#newArticleModal">New Article</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <?php include_once 'newArticle.php' ?>
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Username</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
+                <!-- End  Hover Rows  -->
             </div>
-        
         </div>
     </div>
 </div>
