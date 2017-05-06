@@ -23,7 +23,7 @@
                                 </button>
                                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#"
+                                        <a class="new-article" role="menuitem" tabindex="-1" href="#"
                                            data-toggle="modal"
                                            data-target="#newArticleModal">New Article</a>
                                     </li>
